@@ -33,10 +33,7 @@
   }
 }</code></pre>
         <p>Result:</p>
-        <button
-          class="btn btn-outline btn-primary m-2"
-          @click="state.counter += 1"
-        >
+        <button class="btn btn-outline btn-primary m-2" @click="state.counter += 1">
           Add 1
         </button>
         <p>
@@ -94,7 +91,7 @@ export default {
   setup() {
     // @ts-ignore
     onMounted(() => Prism.highlightAll())
-    
+
     const state = reactive({
       counterEl: '{{state.counter}}',
       counter: 0,
@@ -113,4 +110,5 @@ export default {
 
 
 <style scoped>
+
 </style>
